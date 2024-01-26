@@ -29,16 +29,18 @@
 
     // BUILT-IN FUNCTIONS
     // date functions
-    // echo date('L') . "<br>"; // Displays the day of the week 
+     //echo date('l') . "<br>"; // Displays the day of the week 
     //echo(date(" l dS \of F Y h :i :s A ")) . "<br>";
 
     // time functions
-    echo 'Now: '. time();  // returns a timestamp
+    //echo 'Now: '. time();  // returns a timestamp
 
 
     //calendar functions
-    $week=cal_to_jd(CAL_GREGORIAN,date("m"),date("d"),date("Y"));
+    //$week=cal_to_jd(CAL_GREGORIAN,date("m"),date("d"),date("Y"));
 
+    // $info = cal_info(0);
+    // print_r($info);
 
     // echo strrev(" .dlrow olleH") . "<br>";
 
@@ -47,28 +49,28 @@
 
 
     // USER DEFINED FUNCTIONS
-    // function fix_names($n1, $n2, $n3)
-    // {
+    function fix_names(&$n1, &$n2, &$n3)
+    {
 
-    //     $n1 = strtolower($n1);
-    //     $n2 = strtolower($n2);
-    //     $n3 = strtolower($n3);
+        $n1 = strtoupper($n1);
+        $n2 = strtoupper($n2);
+        $n3 = strtoupper($n3);
 
-    //     return $n1 . " " . $n2 . " " . $n3;
+        return $n1 . " " . $n2 . " " . $n3;
 
-    // }
+    }
 
-    //echo fix_names("WELCOME", "TO", "NIGERIASSS") . "<br>";
+    //echo fix_names("welcome", "to", "nigeria") . "<br>";
     
 
     // PASSING A VALUE BY REFERENCE
-    // $a1 = "WELCOME";
-    // $a2 = "TO";
-    // $a3 = "NIGERIA";
+     $a1 = "welcome";
+     $a2 = "to";
+     $a3 = "nigeria";
 
-    // echo $a1 . " " . $a2 . " " . $a3 . "<br>";
-    // fix_names($a1, $a2, $a3);
-    // echo $a1 . " " . $a2 . " " . $a3 . "<br>";
+    echo $a1 . " " . $a2 . " " . $a3 . "<br>"; //lowercase
+    fix_names($a1, $a2, $a3);
+    echo $a1 . " " . $a2 . " " . $a3 . "<br>"; //uppercase
 
 
     ?>

@@ -67,10 +67,10 @@
     // WHILE LOOP
     // $num = 1;
     // while ($num <= 20) {
-    //     echo $num++;
+    //     echo ++$num;
     //     echo "<br>";
     // }
-    
+
 
 
     //DO WHILE LOOP
@@ -104,13 +104,13 @@
     //     echo "<br>";
     // }
     
-    $arr = array(1, 2, 3, 4);
-    foreach ($arr as &$value) {
-        $value = $value * 2;
-        echo $value;
-        echo "<br>";
-    }
-
+    // $arr = array(1, 2, 3, 4);
+    // foreach ($arr as &$value) {
+    //     $value = $value * 2;
+    //     echo $value;
+    //     echo "<br>";
+    // }
+    
 
     ?>
 
