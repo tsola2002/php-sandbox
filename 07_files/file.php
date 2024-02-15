@@ -47,6 +47,15 @@
     // $content = file_get_contents("file-3.txt");
     // echo nl2br($content);
 
+
+    // 5. deletes a file from the file system
+
+    if(unlink("file-2.txt")){
+        echo "Succes: File Has been deleted";
+    } else {
+        echo "Failure: File has not been deleted";
+    }
+
     ?>
 </body>
 </html>
