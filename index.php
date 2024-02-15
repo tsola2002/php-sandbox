@@ -8,17 +8,22 @@
 </head>
 
 <body>
-    <p>Shola</p>
+
+    <!-- <p>Shola</p> -->
     <?php
-    
-    echo 'Sobotie';
+
+    //$result = file_get_contents("https://randomuser.me/api");
+
+    echo $result;
+
+    //echo 'Sobotie';
     /*
     echo "isaac";
     */
 
     //echo "Joseph";
     
-    phpinfo();
+    //phpinfo();
     
     ?>
 </body>
