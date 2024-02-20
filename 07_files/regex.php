@@ -71,7 +71,7 @@
             $replaced = preg_replace("/shola/", $new_string, $subject);
             echo $replaced . "<br>";
         
-
+    
     ?>
     
 </body>
