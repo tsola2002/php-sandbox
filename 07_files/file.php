@@ -59,10 +59,15 @@
     // }
     
     // 6. using ftell function to view the file pointer
-    $handler = fopen("file-3.txt","r");
-    echo ftell($handler) . ' "' . fgets($handler) . '" ' . ftell($handler) . PHP_EOL;
-    fclose($handler);
+    // $handler = fopen("file-3.txt","r");
+    // echo ftell($handler) . ' "' . fgets($handler) . '" ' . ftell($handler) . PHP_EOL;
+    // fclose($handler);
     
+    // 13. changing file permissions using chmod
+    // $file = 'file-3.txt';
+    // Read and write for owner, read for everybody else
+    // chmod($file, 0600);
+
     // 7. 
     // $resource = "file-3.txt";
     // echo "is readable: " . is_readable($resource) . "<br>";
@@ -70,21 +75,21 @@
     // echo "is executable: " . is_executable($resource). "<br>";
     
     // 8. create a directory
-    // mkdir('demo-folder');
+    //mkdir('demo-folder');
     // $directory_name = "demo-folder";
     // echo "is it a directory: " . is_dir("demo-folder") . "<br>";
     
     // 9. removing a directory 
-    // rmdir('demo-folder');
+    //rmdir('demo-folder');
     
     // 10. making a copy of a file
-    // echo "Has file-3.txt been copied: " . copy("file-3.txt", "new-file-3.txt") . "<br>";
+    //echo "Has file-3.txt been copied: " . copy("file-3.txt", "new-file-3.txt") . "<br>";
     
     // 11. renaming a file
     //rename("file-3.txt", "renamed-file.txt");
     
     // 12. locking a file
-    //$file = 'file-3.txt'; // File to lock
+    //$file = 'new-file-3.txt'; // File to lock
     
     // Open the file for writing
     // $fp = fopen($file, 'w');
@@ -93,7 +98,7 @@
     //     echo "File locked successfully.\n";
     
     //     ftruncate($fp, 0);      // truncate file
-    //     fwrite($fp, "Write something here\n");
+    //     fwrite($fp, "Write something as a pointer here\n");
     //     fflush($fp);            // flush output before releasing the lock
     
     //     // Perform operations on the locked file here
@@ -109,12 +114,7 @@
     // fclose($fp);
     
 
-    // 13. using chmod
-    
-    // $file = 'file-3.txt';
 
-    // Read and write for owner, read for everybody else
-    // chmod($file, 0755);
 
 
 
