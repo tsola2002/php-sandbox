@@ -1,5 +1,6 @@
 <?php
 
+// this will create and open a file called ProductsDetails.txt
 $file = fopen("ProductDetails.txt", "a+");
 
 $Id = $_POST["ProductID"];
