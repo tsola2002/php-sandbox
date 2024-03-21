@@ -38,14 +38,26 @@
         return $result->fetch_all(MYSQLI_ASSOC);
     }
 
+    function createRecord($id, $name, $qualification, $experience){
+        global $con;
+
+        $sql = "INSERT INTO TBL_USER(userid, name, qualification, experience) VALUES ('$id', '$name', '$qualification', '$experience')";
+
+        return $con->query($sql);
+    }
+
+    // creating a new $record
+    createRecord(5, 'BUNMI', 'MSC', 35);
+
     $records = getAllRecords();
+
 
 
     echo "<table border='1'>";
     echo "<tr><th><strong>Name</strong></th><th><strong>Qualification</strong></th><th><strong>Experience</strong></th></tr>";
     foreach ($records as $record) {
 
-       
+    
         echo "<tr><td>" . $record['name'] . "</td><td>" . $record['qualification'] . "</td><td>" . $record['experience'] . "</td></tr>";  
 
     }
