@@ -1,0 +1,4 @@
+[14-Mar-2024 11:59:18 UTC] PHP Fatal error:  Uncaught DivisionByZeroError: Division by zero in /Applications/MAMP/htdocs/niit/12-exceptions/error-reporting.php:10
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/niit/12-exceptions/error-reporting.php on line 10

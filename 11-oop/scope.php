@@ -14,7 +14,7 @@
         // CONSTRUCTOR    
         public function __construct($pet_name){
             $this->name = $pet_name;
-            self::sleep();
+           // self::sleep();
         }
         
         function eat(){
@@ -32,15 +32,43 @@
 
         }
 
-    class Cat extends Pet
-    {
+    class Cat extends Pet{
         function play()
         {
             // call the Pet::play() method 
-            parent::play();
-            echo "<p> $this->name is climbing.</p>";
+            //parent::play();
+            echo "<p> $this->name is meowing.</p>";
         }
     }
+
+    class Dog extends Pet {
+        function play()
+        {
+            // call the Pet::play() method 
+           // parent::play();
+            echo "<p> $this->name is barking.</p>";
+        }
+    }
+
+    $tom = new Cat("Tom");
+    $dog = new Dog("Snoop");
+    $pet = new Pet("Anonymous");
+
+    //Feed all of them
+    // $tom->eat();
+    // $dog->eat();
+    // $pet->eat();
+
+    // Have all of them play
+    $tom->play();
+    $dog->play();
+    $pet->play();
+
+    // Deleting the objects
+    unset($tom, $dog, $pet);
+
+    //$tom->play();
+
 
     ?>
 </body>
