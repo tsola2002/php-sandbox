@@ -18,6 +18,7 @@
     $password = 'root';
 
     // 1. create a connection to our database
+    global $con;
     $con = new mysqli($hostname, $username, $password, $dbname);
 
     // 2. test connection for errors
@@ -46,8 +47,33 @@
         return $con->query($sql);
     }
 
+    function updateRecord($id, $name, $qualification, $experience){
+        global $con;
+        $sql = "UPDATE TBL_USER SET userid = '$id',
+                                    name = '$name',
+                                    qualification = '$qualification',
+                                    experience = '$experience'
+                                    WHERE userid = '$id'";
+        return $con->query($sql);                            
+    }
+
+    function deleteRecord($id){
+
+        global $con;
+
+        $sql = "DELETE FROM TBL_USER WHERE userid = '$id'";
+
+        return $con->query($sql);
+
+    }
+
+    deleteRecord(5);
+
     // creating a new $record
-    createRecord(5, 'BUNMI', 'MSC', 35);
+    //createRecord(5, 'BUNMI', 'MSC', 35);
+
+    //updating a record
+    //updateRecord(1, 'SOBOTIE', 'AZURE', 50);
 
     $records = getAllRecords();
 
