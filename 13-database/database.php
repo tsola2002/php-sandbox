@@ -67,13 +67,13 @@
 
     }
 
-    deleteRecord(5);
+    // deleteRecord(5);
 
     // creating a new $record
-    //createRecord(5, 'BUNMI', 'MSC', 35);
+    // createRecord(5, 'BUNMI', 'MSC', 35);
 
     //updating a record
-    //updateRecord(1, 'SOBOTIE', 'AZURE', 50);
+    // updateRecord(1, 'SOBOTIE', 'AZURE', 50);
 
     $records = getAllRecords();
 
