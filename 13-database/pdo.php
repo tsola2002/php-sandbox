@@ -47,19 +47,36 @@
         return $stmt->execute();
     }
 
+    function updateRecord($id, $name, $qualification, $experience)
+    {
+        global $con;
+        $sql = "UPDATE TBL_USER SET
+        name = '$name',
+        qualification = '$qualification',
+        experience = '$experience'
+        WHERE userid = '$id'";
 
+        $stmt = $con->prepare($sql);
 
+        return $stmt->execute();
+    }
 
     // USAGE SECTION
 
     // create a new record
-    createRecord('ADEKUNLE', 'PGDIP', 25);
+    // createRecord('ADEKUNLE', 'PGDIP', 25);
 
 
+    // updating
+    updateRecord(1, "DAYO", "BSC", 4);
+
+    // getting a records
     $records = getAllRecords();
     foreach($records as $record){
         echo "Name: " . $record['name'] . " Qualification: " . $record['qualification'] . " Experience: " . $record['experience'] . "<br>";
     }
+
+    
 
 
     

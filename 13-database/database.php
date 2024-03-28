@@ -36,7 +36,7 @@
 
         $result = $con->query($sql);
 
-        return $result->fetch_all(MYSQLI_ASSOC);
+        return $result->fetch(MYSQLI_ASSOC);
     }
 
     function createRecord($id, $name, $qualification, $experience){
