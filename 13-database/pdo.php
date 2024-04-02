@@ -61,6 +61,18 @@
         return $stmt->execute();
     }
 
+
+    function deleteRecord($id){
+
+        global $con;
+
+        $sql = "DELETE FROM TBL_USER WHERE userid = '$id'";
+
+        $stmt = $con->prepare($sql);
+
+        return $stmt->execute();
+    }
+
     // USAGE SECTION
 
     // create a new record
@@ -68,7 +80,10 @@
 
 
     // updating
-    updateRecord(1, "DAYO", "BSC", 4);
+    //updateRecord(1, "DAYO", "BSC", 4);
+
+    //deleting a record
+    deleteRecord(5);
 
     // getting a records
     $records = getAllRecords();
