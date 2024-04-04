@@ -12,7 +12,7 @@
     <?php
     $my_email = "tsola2002";
     $number = 0755;
-    $boolean = "sdssdsd";
+    $boolean = true;
 
     //var_dump(filter_var($my_email, FILTER_VALIDATE_EMAIL));
     
