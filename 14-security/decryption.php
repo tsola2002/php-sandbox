@@ -26,7 +26,7 @@
 
         $uuEncodedString = convert_uuencode($uuString);
 
-        echo "This is the decoded version of the uuString using uuDecode Algorithm: <strong>" . convert_uudecode($uuEncodedString) . "</strong><br>";
+        echo "This is the decoded version of the uuString using uuDecode Algorithm: " . convert_uudecode($uuEncodedString) . "<br>";
 
 
     ?>
