@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<OrderDetails>
+    <Order id="001">
+        <CustomerName>Omatsola Sobotie</CustomerName>
+        <Address>9 Admiralty way, Lekki Phase 1</Address>
+        <ProductOrdered>Playstation 5</ProductOrdered>
+        <NoOfItems>2</NoOfItems>
+    </Order>
+    <Order id="002">
+        <CustomerName>Obinna Azuonwu</CustomerName>
+        <Address>9 Freedom way, Coral Estate, Sangotedo</Address>
+        <ProductOrdered>Fridge</ProductOrdered>
+        <NoOfItems>3</NoOfItems>
+    </Order>
+    <Order id="003">
+        <CustomerName>Priscilla Innocent</CustomerName>
+        <Address>12b HFP Way, Dolphin Estate</Address>
+        <ProductOrdered>Handbag</ProductOrdered>
+        <NoOfItems>5</NoOfItems>
+    </Order>
+    <Order id="004">
+        <CustomerName>Adeyinka Alagba</CustomerName>
+        <Address>5 Idowu Emma Street, Ilasan</Address>
+        <ProductOrdered>Generator</ProductOrdered>
+        <NoOfItems>7</NoOfItems>
+    </Order>
+</OrderDetails>
