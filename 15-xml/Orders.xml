@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <OrderDetails>
     <Order id="001">
-        <CustomerName>Omatsola Sobotie</CustomerName>
-        <Address>9 Admiralty way, Lekki Phase 1</Address>
-        <ProductOrdered>Playstation 5</ProductOrdered>
-        <NoOfItems>2</NoOfItems>
+        <CustomerName>AMAKA</CustomerName>
+        <Address>IKOTA</Address>
+        <ProductOrdered>HANDBAG</ProductOrdered>
+        <NoOfItems>70</NoOfItems>
     </Order>
     <Order id="002">
         <CustomerName>Obinna Azuonwu</CustomerName>
