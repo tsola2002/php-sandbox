@@ -1,11 +1,6 @@
 <?xml version="1.0"?>
 <OrderDetails>
-    <Order id="001">
-        <CustomerName>AMAKA</CustomerName>
-        <Address>IKOTA</Address>
-        <ProductOrdered>HANDBAG</ProductOrdered>
-        <NoOfItems>70</NoOfItems>
-    </Order>
+    
     <Order id="002">
         <CustomerName>Obinna Azuonwu</CustomerName>
         <Address>9 Freedom way, Coral Estate, Sangotedo</Address>

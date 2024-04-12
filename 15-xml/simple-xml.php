@@ -49,6 +49,19 @@ class OrderDetails{
         return false;
     }
 
+    public function deleteOrder($id){
+        $xml = simplexml_load_file($this->xmlFile);
+        foreach ($xml->children() as $order) {
+            if ((string) $order['id'] === $id) {
+                $dom = dom_import_simplexml($order);
+                $dom->parentNode->removeChild($dom);
+                $xml->asXML($this->xmlFile);
+                return true;
+            }
+        }
+        return false;
+    }
+
 
 }
 // USAGE
@@ -58,7 +71,9 @@ $orderDetails = new OrderDetails('Orders.xml');
 //$orderDetails->addOrder('007', 'OBINNA', 'IKOYI', 'MAC', 50);
 
 // UPDATE AN ORDER
-$orderDetails->updateOrder('001', 'AMAKA', 'IKOTA', 'HANDBAG', 70);
+//$orderDetails->updateOrder('001', 'AMAKA', 'IKOTA', 'HANDBAG', 70);
+
+$orderDetails->deleteOrder("001");
 
 
 // DISPLAY ALL ORDERS
