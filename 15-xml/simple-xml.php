@@ -2,9 +2,9 @@
 
 class OrderDetails{
 
-    private $xmlFile;
+    public $xmlFile;
 
-    private function __construct($xmlFile){
+    public function __construct($xmlFile){
         $this->xmlFile = $xmlFile;
     }
 
@@ -21,6 +21,17 @@ class OrderDetails{
             ];
         }
         return $orders;
+    }
+
+    public function addOrder($id, $customerName, $address, $productOrdered, $noOfItems){
+        $xml = simplexml_load_file($this->xmlFile);
+        $order = $xml->addChild('Order');
+        $order->addAttribute('id', $id);
+        $order->addChild('customerName', $customerName);
+        $order->addChild('Address', $address);
+        $order->addChild('ProductOrdered', $productOrdered);
+        $order->addChild('NoOfItems', $noOfItems);
+        $xml->asXML($this->xmlFile);
     }
 
 
