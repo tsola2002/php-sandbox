@@ -27,7 +27,7 @@ class OrderDetails{
         $xml = simplexml_load_file($this->xmlFile);
         $order = $xml->addChild('Order');
         $order->addAttribute('id', $id);
-        $order->addChild('customerName', $customerName);
+        $order->addChild('CustomerName', $customerName);
         $order->addChild('Address', $address);
         $order->addChild('ProductOrdered', $productOrdered);
         $order->addChild('NoOfItems', $noOfItems);
@@ -38,6 +38,9 @@ class OrderDetails{
 }
 // USAGE
 $orderDetails = new OrderDetails('Orders.xml');
+
+// ADD A NEW ORDER
+$orderDetails->addOrder('007', 'OBINNA', 'IKOYI', 'MAC', 50);
 
 //DISPLAY ALL ORDERS
 $allOrders = $orderDetails->getAllOrders();

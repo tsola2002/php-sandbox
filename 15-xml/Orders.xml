@@ -25,4 +25,4 @@
         <NoOfItems>7</NoOfItems>
     </Order>
     
-</OrderDetails>
+<Order id="005"><customerName>ADEDAYO</customerName><Address>SANGOTEDO</Address><ProductOrdered>PC</ProductOrdered><NoOfItems>20</NoOfItems></Order><Order id="007"><CustomerName>OBINNA</CustomerName><Address>IKOYI</Address><ProductOrdered>MAC</ProductOrdered><NoOfItems>50</NoOfItems></Order></OrderDetails>
