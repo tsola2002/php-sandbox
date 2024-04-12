@@ -25,7 +25,12 @@ class OrderDetails{
 
 
 }
+// USAGE
+$orderDetails = new OrderDetails('Orders.xml');
 
+//DISPLAY ALL ORDERS
+$allOrders = $orderDetails->getAllOrders();
+print_r($allOrders);
 
 
 
