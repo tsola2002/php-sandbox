@@ -34,6 +34,21 @@ class OrderDetails{
         $xml->asXML($this->xmlFile);
     }
 
+    public function updateOrder($id, $customerName, $address, $productOrdered, $noOfItems){
+        $xml = simplexml_load_file($this->xmlFile);
+        foreach($xml->children() as $order){
+            if((string)$order->['id'] === $id){
+                $order->CustomerName = $customerName;
+                $order->Address = $address;
+                $order->ProductOrdered = $productOrdered;
+                $order->NoOfItems = $noOfItems;
+                $xml->asXML($this->xmlFile);
+                return true;
+            }
+        }
+        return false;
+    }
+
 
 }
 // USAGE
@@ -42,7 +57,7 @@ $orderDetails = new OrderDetails('Orders.xml');
 // ADD A NEW ORDER
 $orderDetails->addOrder('007', 'OBINNA', 'IKOYI', 'MAC', 50);
 
-//DISPLAY ALL ORDERS
+// DISPLAY ALL ORDERS
 $allOrders = $orderDetails->getAllOrders();
 print_r($allOrders);
 
