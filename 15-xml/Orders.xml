@@ -1,4 +1,4 @@
-<?xml version="1.0" ?>
+<?xml version="1.0"?>
 <OrderDetails>
     <Order id="001">
         <CustomerName>Omatsola Sobotie</CustomerName>
@@ -24,4 +24,5 @@
         <ProductOrdered>Generator</ProductOrdered>
         <NoOfItems>7</NoOfItems>
     </Order>
+    
 </OrderDetails>
