@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asynchronous Program Example</title>
+</head>
+<body>
+    <h1>Loading a web page into a div</h1>
+    <div id="info">
+        This sentence will be replaced using ajax
+    </div>
+    <script>
+        // creating xmlhttp object
+        let XHR = new XMLHttpRequest();
+
+        // open an xmlhttp request
+        // XHR.open("POST", "http://localhost:8080/niit/16-ajax/urlpost.php?url=news.com");
+        XHR.open("POST", "http://localhost:8888/niit/16-ajax/urlpost.php?url=news.com");
+
+        XHR.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        // send the xml
+        XHR.send("url=news.com");
+
+        XHR.onreadystatechange = function(){
+            if(this.readyState == 4 && this.status == 200){
+                document.getElementById("info").innerHTML = this.responseText;
+            }
+        }
+    </script>
+</body>
+</html>
