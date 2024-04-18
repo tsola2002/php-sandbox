@@ -1,0 +1,47 @@
+{
+  "results": [
+    {
+      "gender": "female",
+      "name": { "title": "Madame", "first": "Maude", "last": "Clement" },
+      "location": {
+        "street": { "number": 6634, "name": "Rue des Ecrivains" },
+        "city": "Bettenhausen",
+        "state": "Thurgau",
+        "country": "Switzerland",
+        "postcode": 2240,
+        "coordinates": { "latitude": "-56.9383", "longitude": "24.5202" },
+        "timezone": {
+          "offset": "+6:00",
+          "description": "Almaty, Dhaka, Colombo"
+        }
+      },
+      "email": "maude.clement@example.com",
+      "login": {
+        "uuid": "a2bcab1c-51f9-455f-8b50-5bbd0a20570c",
+        "username": "angrygoose732",
+        "password": "eternal",
+        "salt": "f0Ltt8dS",
+        "md5": "58bc5343042b2ea8be63ea5c42bfe3a3",
+        "sha1": "2447b30abff7dcd24aa24185688997821fd12d28",
+        "sha256": "c6e89ce35419ad0ff8ba03bf455e321a7c238f983f1812799dd1eb2e23d0f47a"
+      },
+      "dob": { "date": "1985-11-06T03:59:02.326Z", "age": 38 },
+      "registered": { "date": "2019-06-17T17:48:11.804Z", "age": 4 },
+      "phone": "075 340 85 04",
+      "cell": "079 645 31 53",
+      "id": { "name": "AVS", "value": "756.2141.1630.27" },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/2.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/2.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/2.jpg"
+      },
+      "nat": "CH"
+    }
+  ],
+  "info": {
+    "seed": "cf99cf0046ba7df1",
+    "results": 1,
+    "page": 1,
+    "version": "1.4"
+  }
+}
