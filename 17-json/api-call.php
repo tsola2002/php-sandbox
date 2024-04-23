@@ -12,7 +12,7 @@ $encoded_data = json_encode($arr);
 
 //var_dump($data);
 
-echo $data['results'][0]['location']['coordinates']['longitude'];
+echo $data['results'][0]['login']['password'];
 
 
 // echo $data;
