@@ -1,0 +1,11 @@
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.error {
+    background-color: pink;
+    color: red;
+    border-radius: 5px;
+    padding: 3px;
+}
