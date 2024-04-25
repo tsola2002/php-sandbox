@@ -5,7 +5,7 @@
 
     print '<h2>Add a Quotation</h2>';
 
-    if(is_administrator()){
+    if(!is_administrator()){
         print '<h2>Access Denied!</h2><p class="error">You do not have permission to access this page.</p>';
         include('templates/footer.html'); 
         exit();
