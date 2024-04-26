@@ -15,7 +15,7 @@
     if(isset($_GET['id']) && is_numeric($_GET['id']) && ($_GET['id'] > 0)) {
         // display the entry in a form
         // define the query
-    $query = "SELECT quote, source, favorite FROM quotes WHERE id={$_GET['id']}";
+        $query = "SELECT quote, source, favorite FROM quotes WHERE id={$_GET['id']}";
         if($result = mysqli_query($dbc, $query)){
             $row = mysqli_fetch_array($result);
             // create the form
