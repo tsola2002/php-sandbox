@@ -29,7 +29,7 @@
             mysqli_query($dbc, $query);
 
             if (mysqli_affected_rows($dbc) == 1) {
-                print '<p>Your quotation has been stored.</p>';
+                print '<p class="success">Your quotation has been stored.</p>';
             } else {
                 print '<p class="error">Could not store the quote because:<br>' . mysqli_error($dbc) . '.</p><p>The query being run was: ' . $query . '</p>';
             }

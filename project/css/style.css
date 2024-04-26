@@ -9,3 +9,10 @@ body{
     border-radius: 5px;
     padding: 3px;
 }
+
+.success {
+    background-color: lightgreen;
+    color: darkgreen;
+    border-radius: 5px;
+    padding: 3px;
+}
