@@ -44,7 +44,7 @@
 <form action="add_quote.php" method="post">
     <p><label>Quote<textarea name="quote" rows="5" cols="30"></textarea></label></p>
     <p><label>Source <input type="text" name="source"></label></p>
-    <p><label>Is this a favourite? <input type="checkbox" name="favourite" value="yes"></label></p>
+    <p><label>Is this a favourite? <input type="checkbox" name="favorite" value="yes"></label></p>
     <p><input type="submit" name="submit" value="Add this quote"></p>
 </form>
 
